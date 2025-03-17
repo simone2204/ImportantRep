@@ -1,0 +1,646 @@
+body{
+    margin: 0 10%;
+    background: linear-gradient(-180deg, white, white, rgb(169, 229, 231));
+    padding-top: 1%;
+}
+
+/*INIZIO HEADER*/
+header {
+    margin-top: -18px;
+    width: 80%;
+    position: fixed;
+    background-color: white;
+    padding: 4px;
+    border-radius: 10px;
+    z-index: 5;
+}
+#hr-first{
+    margin-top: 58px;
+}
+
+#title {
+    display: block;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: black;
+    margin-left: 32rem;
+    width: 40%;
+}
+#title:hover{
+    color: rgb(89, 99, 104);
+}
+
+#Date{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Login {
+    float: right;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin-left: auto;
+    background-color: rgb(22, 52, 141);
+    margin-right: 10px;
+    margin-top: 5px;
+}
+#Logout{
+    float: right;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin-left: auto;
+    background-color: rgb(22, 52, 141);
+    margin-right: -20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#Logout:hover{
+    color: rgb(79, 154, 189);
+}
+.Login:hover {
+    color: rgb(79, 154, 189);
+}
+
+#user-info{
+    width: 15%;
+    display: inline;
+    float:right;
+    margin-right: -175px;
+    margin-top: 40px;
+}
+.like-icon {
+    color: rgb(211, 226, 222);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*FINE HEADER*/
+/*-------------------------------------------------*/
+
+/*INIZIO NAVBAR*/
+
+.navbar {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-left: 210px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.navbar:hover{
+    color: rgb(118, 117, 117);
+}
+
+hr {
+    margin: 2px 0;
+}
+
+/*FINE NAVBAR*/
+/*-------------------------------------------------*/
+
+/*MAIN*/
+/*FIRST FLEXBOX WITH 4 ARTICLES*/
+#Container-1{
+    display: flex;
+    justify-content:space-between;
+    height: 38em;
+    margin-top: 20px;
+}
+#Container-1 a{
+    text-decoration: none;
+    color: black;
+}
+#readMore{
+    text-decoration:underline;
+    cursor: pointer;
+    width: 20%;
+}
+.img-api{
+    width: 95%;
+    height: 60%;
+}
+#readMore:hover{
+    color: rgb(118, 117, 117);
+}
+#paragraphs{
+    visibility: hidden;
+}
+#hr-sottoparagrafo{
+    width: 240%;
+}
+#hr-1{
+    margin-top: 25px;
+}
+.Div-1{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 30%;
+    margin-top: -20px;
+}
+#hr-4{
+    margin-top: 110px;
+    margin-left: -27rem;
+    width: 235%;
+}
+#header-1{
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 38px;
+    margin-top: 1rem;
+}
+.visible{
+    visibility: visible;
+}
+.hidden{
+    display: none;
+}
+.Div-1 p {
+    font-size: 1rem;
+}
+.Div-1 h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 180%;
+    margin-top: 1rem;
+}
+.Div-1 #P-1{
+    width: 230%;
+}
+
+.Div-2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 40%;
+    margin-top: -20px;
+}
+.Div-2 img{
+    width: 100%;
+    height: 62%;
+}
+.Div-2 hr {
+    width: 0;
+    height: 620px;
+    margin-left: -12px;
+    margin-top: -620px;
+}
+.IMG-1 hr {
+    width: 233%;
+    margin-left: -438px;
+    margin-top: 450px;
+}
+#hr-2{
+    width: 240%;
+}
+.Div-1-h2-p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 190%;
+    margin-top: 1.3rem;
+}
+/*END FIRST FLEXBOX WITH 4 ARTICLES*/
+
+
+
+/* Contenitore per ciascun articolo */
+#mostRecentArticles{
+    margin-top: -1em;
+}
+
+
+.article {
+    border: 1px solid #ddd; 
+    margin: 10px 0;          
+    padding: 15px;             
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Titolo dell'articolo */
+  .article h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragrafo dell'articolo */
+  .article p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragrafo di introduzione o "lead" */
+  .article small {
+    font-size: 0.9em;
+    color: #555;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  /* Immagine dell'articolo */
+  .article img {
+    max-width: 100%;          /* La larghezza massima dell'immagine è 100% */
+    height: auto;             /* Mantiene le proporzioni dell'immagine */
+    margin-bottom: 15px;
+  }
+  
+  /* Icona del like e contatore */
+  .article .likeIcon {
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-right: 10px;
+  }
+  
+  /* Contatore dei like */
+  .article .likeCount {
+    font-size: 1.2em;
+    color: #555;
+  }
+
+  #comment_1 {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Pulsante per commento */
+  .article .comment {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .article .comment:hover {
+    background-color: #0056b3;
+  }
+  
+
+  
+
+/*SECOND CONTAINER WITH 2 ARTICLES*/
+#Container-2{
+    display: flex;
+    height: 32em;
+    margin-top: 40px;
+}
+#Container-2 h2{
+    font-size: 20px;
+    margin-top: -20px;
+}
+.Div-3{
+    text-align: center;
+    margin-left: -60px;
+}
+.Div-4 {
+    margin-top: -35px;
+    text-align: center;
+}
+#hr-3 {
+    width: 0;
+    height: 500px;
+    margin-left: 603px;
+    margin-top: -500px;
+}
+
+/*THIRD CONTAINER*/
+#Container-3{
+    justify-content: center;
+    display: flex;
+    height: 30em;
+    margin-top: -1rem;
+}
+.Div-5 h3{
+    margin-left: 3rem;
+    width: 80%;
+}
+.Div-5 p {
+    margin-top: -10px;
+    margin-left: 3rem;
+    width: 80%;
+}
+.Div-6 h3 {
+    margin-left: 2rem;
+    width: 90%;
+}
+.Div-5 hr {
+    width: 80%;
+    margin-left: 50px;
+}
+.Div-6 hr {
+    width: 80%;
+    margin-left: 30px;
+}
+#hr-7{
+    margin-top: 15px;
+}
+#hr-6{
+    width: 0;
+    height: 29rem;
+    margin-left: 1rem;
+    margin-top: -18rem;
+}
+#Container-3 img {
+    cursor: pointer;
+}
+.modal-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 80vw;
+    margin-top: 95rem;
+    margin-left: 10.6rem;
+    background-color: hsla(200, 4%, 14%, 0.8);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/*NewContainer and new-h1 CREATED THROUGH JAVASCRIPT*/
+.NewContainer {
+display: flex;
+height: 20rem;
+border-radius: 10px;
+margin-top: 1rem;
+justify-content: center;
+background-image: url("journal/journal.jpg");
+}
+
+.new-h1{
+    width: 55%;
+    text-align: center;
+    background-color: white;
+    margin-top: 140px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#GamesContainer{
+    display: flex;
+    justify-content: center;
+}
+#GamesContainer a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    width: 8.5%;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    color: black;
+    background-color: beige;
+}
+#GamesContainer a:hover {
+    background-color:antiquewhite;
+}
+/*FINE MAIN*/
+
+
+/*INIZIO FOOTER*/
+
+footer {
+    margin-top: 10px;
+    background: linear-gradient(30deg, rgba(206, 209, 182, 0.733), rgb(200, 190, 190), rgb(213, 206, 206));
+    clear: both;
+    padding: 10px;
+}
+
+.footer-container{
+    text-align: center;
+    padding: 20px;
+}
+
+.footer1 li {
+    display: inline;
+    font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman', serif;
+    margin: 8%;
+    text-decoration: none;
+}
+
+.footer1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer1 a:hover{
+    color: hsl(230, 24%, 43%);
+}
+
+.Mainfooter a{
+    display: block;
+    margin-top: -20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: black;
+}
+
+.afterfooter {
+    padding-top: 2%;
+    font-size: 80%;
+    text-align: center;
+    padding-bottom: 3%;
+    text-decoration: none;
+}
+
+.afterfooter a {
+    text-decoration: none;
+    color: black;
+}
+
+/*FINE FOOTER*/
+
+
+/*--------------------------------------------------------------------------
+/*MEDIA MOBILE*/
+@media (min-width: 1920px) and (max-width: 1920px) {
+    .title {
+        margin-left: 33.5rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 950px) {
+    .Login{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10rem;
+    }
+    #title {
+        padding-top:95px;
+        text-align: center;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration: none;
+        color: black;
+        margin-left: -0.5rem;
+        width: 80%;
+    }
+    #Date{
+        margin-top: 30px;
+        text-align: center;
+        margin-left: -7rem;
+    }
+    .navbar{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    #hr-first{
+        margin-top: 15rem;
+    }
+    .hr-double{
+        margin-top: 15px;
+    }
+
+    #Container-1{
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 5rem;
+    }
+    #readMore{
+        width: 22%;
+    }
+    #hr-1{
+        margin-top: 175px;
+        margin-left: -0.5rem;
+    }
+    .img-api{
+        width: 360px;
+        height: 360px;
+    }
+    .Div-1 {
+        width: 100%;
+    }
+    .Div-1 #P-1{
+        width: 90%;
+    }
+    .Div-2{
+        width: 100%;
+    }
+    .Div-1 h2{
+        width: 110%;
+    }
+    #P-1{
+        width: 110%;
+    }
+    .Div-1-h2-p{
+        width: 110%;
+        margin-top: 5px;
+    }
+    .Div-2{
+        width: 110%;
+    }
+    .Div-2 img{
+        width: 390px;
+        height: 360px;
+    }
+    #Container-1 hr{
+        width: 0px;
+        height: 0px;
+    }
+    .hr-2{
+        width: 0px;
+    }
+
+    #Container-2{
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+    #Container-2 img {
+        margin-left: -55px;
+        width: 360px;
+        height: 360px;
+    }
+    #Container-2 h2 {
+        margin-left: 20px;
+    }
+    #hr-3{
+        width: 22rem;
+        height: 0px;
+        margin-left: -40px;
+        margin-top: 20px;
+    }
+    .Div-3{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .Div-4{
+        margin-left: 25px;
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    
+    #SportsCoverage{
+        margin-top: 50rem;
+        margin-left: 5rem;
+    }
+    #button{
+        width: 110%;
+        margin-left: -1px;
+    }
+    .modal-view {
+        display: none;
+    }
+    #Container-3{
+        flex-direction: column;
+        margin-top: 12rem;
+    }
+    #Container-3 img{
+        width: 360px;
+    }
+    #hr-6{
+        height: 0px;
+        width: 0px;
+        margin-left: 100px;
+    }
+
+    #newContainer{
+        margin-top: 28rem;
+        width: 145%;
+        margin-left: -50px;
+    }
+    #new-h1{
+        width: 10%;
+    }
+
+    #articles-container{
+        margin-top: 1rem;
+    }
+
+    #mostRecentArticles{
+        margin-top: 50rem;
+    }
+
+    #GamesContainer{
+        margin-top: 3rem;
+        width: 200%;
+        margin-left: -10.5rem;
+    }
+
+
+    .footer-container{
+        margin-top: 5rem;
+    }
+    .Mainfooter a{
+        margin-top: -90px;
+    }
+    .footer1{
+        width: 10%;
+        margin-left: 50px;
+    }
+}

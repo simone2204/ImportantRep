@@ -1,0 +1,38 @@
+body{
+    background-color: #c8dcde;
+}
+#Container {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+}
+button{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(50, 50, 141);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(106, 175, 205);
+}
+button:active{
+    background-color: rgb(40, 158, 208);
+}
+input{
+    font-size: 2rem;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#DiceResult{
+    margin: 25px;
+}
+#DiceImages img{
+    width: 150px;
+    margin: 5px;
+}
