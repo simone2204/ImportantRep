@@ -36,34 +36,19 @@ if (!$user) {
 
 $userId = $user["id"];
 
+$sqlInsertComment = "INSERT INTO comments (user_id, article_id, comment, comment_date) VALUES (?, ?, ?, NOW())";
+$stmtInsertComment = $conn->prepare($sqlInsertComment);
+$stmtInsertComment->bind_param("iis", $userId, $articleId, $comment);
 
-$sqlCheck = "SELECT * FROM comments WHERE user_id = ? AND article_id = ?";
-$stmtCheck = $conn->prepare($sqlCheck);
-$stmtCheck->bind_param("ii", $userId, $articleId);
-$stmtCheck->execute();
-$result = $stmtCheck->get_result();
-
-if ($result->num_rows > 0) {
-    echo json_encode(["error" => "$userEmail ha già commentato questo articolo"]);
-} else {
-    
-    $sqlInsertComment = "INSERT INTO comments (user_id, article_id, comment, comment_date) VALUES (?, ?, ?, NOW())";
-    $stmtInsertComment = $conn->prepare($sqlInsertComment);
-    $stmtInsertComment->bind_param("iis", $userId, $articleId, $comment);
-    
-    if (!$stmtInsertComment->execute()) {
-        echo json_encode(["error" => "Errore durante l'aggiunta del commento"]);
-        exit;
-    }
-
-    echo json_encode(["success" => true, "action" => "comment_added"]);
-    header("Location: http://127.0.0.1/Projects/SitoPrincipale/site.php");
+if (!$stmtInsertComment->execute()) {
+    echo json_encode(["error" => "Errore durante l'aggiunta del commento"]);
+    exit;
 }
 
-$stmtCheck->close();
-if (isset($stmtInsertComment)) {
-    $stmtInsertComment->close();
-}
+echo json_encode(["success" => true, "action" => "comment_added"]);
 
+header("Location: http://127.0.0.1/Projects/SitoPrincipale/site.php");
+
+$stmtInsertComment->close();
 $conn->close();
 ?>
